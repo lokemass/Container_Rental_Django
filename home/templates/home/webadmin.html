@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>Container Leasing System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/w3.css' %}">
+</head>
+<body>
+<style>
+  body{
+  background-image: url({%static '/images/img3.jpg'});
+   height: 100%;
+
+ background-size: cover;
+ background-repeat: no-repeat;
+ }
+</style>
+  <div class="w3-container w3-cyan ">
+    <h1 class="w3-center">Online Container LeasingSystem<h1>
+  </div>
+  <div class="w3-center w3-bar w3-black w3-large"> Welcome to Container Leasing System</div><br><br>
+  <div class="w3-display-container" style="height:400px;">
+    <div class="w3-display-middle">
+Welcome Admin
+      {% for student in containerData %}
+    {{ student.}}
+    {{ student.l_name }}
+    {{ student.student_number }}
+    {{ student.dob }}
+{% endfor %}
+</body>
+</html>
